@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>recrutment</class>
+ <widget class="QMainWindow" name="recrutment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>recrutment</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>781</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="rec">
+     <widget class="QPushButton" name="delete_rec">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+      </property>
+      <property name="text">
+       <string>suprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update_rec">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_rec">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="export_rec">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+      </property>
+      <property name="text">
+       <string>exporter en pdf</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="read_rec">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>93</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+      </property>
+      <property name="text">
+       <string>afficher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update_rec_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+      </property>
+      <property name="text">
+       <string>statistique</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>621</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="addd_rec">
+       <widget class="QGroupBox" name="addddd">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>ajout d'un offre</string>
+        </property>
+        <widget class="QLineEdit" name="titre_add">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>50</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="salaire_add">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>210</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="date_pub_add">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>110</y>
+           <width>110</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2024</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+         <property name="date">
+          <date>
+           <year>2024</year>
+           <month>1</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="date_exp_add">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>160</y>
+           <width>110</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2024</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+        </widget>
+        <widget class="QPlainTextEdit" name="description_add">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>270</y>
+           <width>171</width>
+           <height>87</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ajouter">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>530</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>ajouter</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_70">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>titre du offre</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_71">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>260</y>
+           <width>201</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>description du offre</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_72">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>110</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date publication</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_73">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>160</y>
+           <width>171</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date expiration</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_74">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>210</y>
+           <width>221</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>salaire</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_75">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>400</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>id  candidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_candidat_offre_addd">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>390</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="afficher_rec">
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>afficher un offre</string>
+        </property>
+        <widget class="QLabel" name="label_112">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id d'offre :</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_read_3">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>40</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="add_rec_2">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>20</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>salaire</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="table">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>471</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget QHeaderView {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget::item {
+    color: black;
+}
+</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>id offre</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>titre</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>description</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>date publication</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>date expiration</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>salairee</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>id condidat</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="add_rec_3">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>50</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>date expiration</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="add_rec_4">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>50</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>date publication</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_119">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>trie par</string>
+         </property>
+        </widget>
+        <zorder>add_rec_2</zorder>
+        <zorder>label_112</zorder>
+        <zorder>id_read_3</zorder>
+        <zorder>table</zorder>
+        <zorder>add_rec_3</zorder>
+        <zorder>add_rec_4</zorder>
+        <zorder>label_119</zorder>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="del_rec">
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>suprimer un offre</string>
+        </property>
+        <widget class="QLineEdit" name="titre_offre_sup">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>90</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPlainTextEdit" name="description_sup_offre">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>280</y>
+           <width>171</width>
+           <height>87</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="suprimer_offre">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>510</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>suprimer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_113">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>titre d'offre</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_114">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>270</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>description</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_115">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>130</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date du publication</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_116">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>180</y>
+           <width>241</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date d'expiration</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_117">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>220</y>
+           <width>171</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>salaire</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="salaire_sup_offre">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>220</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="date_exp_supp_offre">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>170</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_120">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>40</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id du offre</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_sup_offre">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>50</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="chercher_supp__offre">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>510</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>cherhcer</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="date_pub_offre">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>130</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_118">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>400</y>
+           <width>171</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id candidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="salaire_sup_offre_2">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>390</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="mod_rec">
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>modifier un offre</string>
+        </property>
+        <widget class="QLineEdit" name="titre_mod_offre">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>90</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="date_pub_offre_mod">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>140</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="date_exp_offre_mod">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>190</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPlainTextEdit" name="desc_offre_mod">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>300</y>
+           <width>171</width>
+           <height>87</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="mod_offre">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>modifier</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_121">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>90</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>titre d'offre</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_122">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>300</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>description d'offre</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_123">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>140</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date publication</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_124">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>190</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>date expiration</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_125">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>240</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>salaire</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="salaire_offre_mod">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>240</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_128">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id d'offre</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_mod_offre">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>40</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="chercher_offre">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>cherhcer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_126">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>420</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id_candidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_offre_candidat_add">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>410</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="condi">
+     <widget class="QStackedWidget" name="stackedWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>621</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="addd_rec_4">
+       <widget class="QGroupBox" name="addddd_4">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>ajouter un condidat</string>
+        </property>
+        <widget class="QLineEdit" name="nom_condidat_add">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>60</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="prenom_condidat_add">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>100</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="email_dindiat_add">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>140</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tel_condidat_add">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>180</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ajouter_con">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>530</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>ajouter</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_182">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>60</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>nom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_183">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>110</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>prenom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_184">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>150</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>adresse e-mail</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_185">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>190</y>
+           <width>241</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>telephone</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_187">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>230</y>
+           <width>181</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>cin</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cin_condidat_add">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>220</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="afficher_rec_4">
+       <widget class="QGroupBox" name="groupBox_26">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>afficher les condidat</string>
+        </property>
+        <widget class="QLabel" name="label_189">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>40</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id du condidat :</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_read_6">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>40</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="table_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>471</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget QHeaderView {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: white;
+    color: black;
+}
+
+QTableWidget::item {
+    color: black;
+}
+</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>id condidat</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>nom</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>prenom</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>email</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>telephone</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>cin</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="del_rec_4">
+       <widget class="QGroupBox" name="groupBox_27">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>suprimer un condidat</string>
+        </property>
+        <widget class="QLineEdit" name="nom_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>90</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="prenom_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>130</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="mail_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>170</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tel_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>210</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="suprimer_6">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>suprimer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_190">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>90</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>nom du condidat</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_191">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>180</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>adresse e-mail</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_192">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>220</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>telephone</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_193">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>260</y>
+           <width>241</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>cin</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_197">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id du condidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="id_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>50</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="cherhcer_11">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>cherhcer</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cin_del_con">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>250</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_195">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>140</y>
+           <width>201</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>prenom du condidat</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="mod_rec_4">
+       <widget class="QGroupBox" name="groupBox_28">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>491</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 190, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 255));
+font: 75 12pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="title">
+         <string>modifier un condidat</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_nom_upd_6">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>90</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_mail_upd_6">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>170</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_tel_upd_6">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>210</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_cin_upd_6">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>250</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="modifier_6">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>modifier</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_198">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>90</y>
+           <width>171</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>nom du condidat</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_199">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>180</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>adresse e-mail</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_200">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>220</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>telephone</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_201">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>260</y>
+           <width>241</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>cin</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_205">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id du condidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_id_upd_6">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>50</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="cherhcer_12">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>530</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(50, 50, 50, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+         </property>
+         <property name="text">
+          <string>cherhcer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_203">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>130</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 13pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>prenom du condidat</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_prenom_upd">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>130</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(189, 189, 189, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:10px;
+border:1px solid black;</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="add_condidat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="afficher_condiat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>afficher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="suprimer_condidat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>suprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifer_condidat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exporter_condidat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>exporter en pdf</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="recrutment_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+border-radius: 50%;
+width: 100px; /* ajuster selon vos besoins */
+height: 100px; /* ajuster selon vos besoins */</string>
+    </property>
+    <property name="text">
+     <string>offre d'emploi</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ajouter_v_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255));
+
+font:10pt &quot;Arial&quot;;
+border:1px solid white;
+	</string>
+    </property>
+    <property name="text">
+     <string>condidat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>961</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/Mega-PC/Downloads/white-smooth-textured-paper-background.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>stackedWidget_1</zorder>
+   <zorder>recrutment_2</zorder>
+   <zorder>ajouter_v_4</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
